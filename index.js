@@ -133,4 +133,5 @@ app.get('/stream/:hostName/hls/live/:streamId/:streamName/:chunkId/:tracks/*', p
   }
 }));
 // Start the server on port 3000
-app.listen(process.env.PORT);
+const PORT = process.env.PORT || 3000;
+app.listen(PORT);
